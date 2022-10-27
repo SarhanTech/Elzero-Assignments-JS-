@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>التكليف 01</title>
+    <script>
+      // Code One
+      /*Because the javascript code
+      is before the H1 element*/
+    document.getElementById("el").style.color = "red";
+    </script>
+    <script>
+      // Code Two
+    window.onload = function () {
+        document.getElementById("el").style.color = "blue";};
+    </script>
+  </head>
+  <body>
+    <h1 id="el">Page Title</h1>
+    <script>
+      // Code Three
+      document.getElementById("el").style.color = "red";
+    </script>
+  </body>
+</html>
